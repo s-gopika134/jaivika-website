@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaivika - Style for Every You</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:url("C:\Users\91837\Downloads\ChatGPT Image Feb 28, 2026, 04_56_03 PM.png")no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    header{
+        background:#111;
+        color:#fff;
+        padding:15px 50px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    nav a{
+        color:#fff;
+        text-decoration:none;
+        margin-left:20px;
+        font-size:16px;
+    }
+
+    .hero{
+        background:url("C:\Users\91837\Downloads\ChatGPT Image Feb 28, 2026, 04_56_03 PM.png") no-repeat center center/cover;
+        height:90vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        text-align:center;
+    }
+
+    .hero h2{
+        font-size:50px;
+        background:rgba(0,0,0,0.5);
+        padding:20px;
+    }
+
+    .section-title{
+        text-align:center;
+        margin:50px 0 20px;
+        font-size:30px;
+    }
+
+    .products{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+        padding:20px 50px;
+    }
+
+    .card{
+        background:white;
+        border-radius:10px;
+        overflow:hidden;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:scale(1.05);
+    }
+
+    .card img{
+        width:100%;
+        height:300px;
+        object-fit:cover;
+    }
+
+    .card-body{
+        padding:15px;
+        text-align:center;
+    }
+
+    .card-body h3{
+        margin-bottom:10px;
+    }
+
+    .card-body button{
+        padding:10px 15px;
+        border:none;
+        background:#111;
+        color:white;
+        cursor:pointer;
+        border-radius:5px;
+    }
+
+    footer{
+        background:#111;
+        color:white;
+        text-align:center;
+        padding:20px;
+        margin-top:50px;
+    }
+
+    @media(max-width:768px){
+        .hero h2{
+            font-size:30px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jaivika</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="C:\Users\91837\Downloads\ChatGPT Image Mar 1, 2026, 03_14_19 PM.png">
+</section>
+
+<h2 class="section-title" id="men">Men Collection</h2>
+<section class="products">
+    <div class="card">
+        <img src="C:\Users\91837\Downloads\nimble-made-7RIMS-NMsbc-unsplash.jpg">
+        <div class="card-body">
+            <h3>Men's Casual Shirt</h3>
+            <p>₹999</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\91837\Downloads\aejaz-memon-YcXxfQJ_o1E-unsplash.jpg">
+        <div class="card-body">
+            <h3>Men's Jacket</h3>
+            <p>₹1999</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<h2 class="section-title" id="women">Women Collection</h2>
+<section class="products">
+    <div class="card">
+        <img src="C:\Users\91837\Downloads\imana-CCTGbN7xOJU-unsplash.jpg">
+        <div class="card-body">
+            <h3>Women's Dress</h3>
+            <p>₹1499</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="C:\Users\91837\Downloads\raamin-ka-uR51HXLO7G0-unsplash.jpg">
+        <div class="card-body">
+            <h3>Women's Top</h3>
+            <p>₹799</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>© 2026 Jaivika | Style for Every You</p>
+</footer>
+
+<script>
+function addToCart(){
+    alert("Item added to cart!");
+}
+</script>
+
+</body>
+</html>
